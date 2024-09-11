@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <link rel="stylesheet" href="./node_modules//bootstrap/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="asset/styles.css">
+    <base href="./">
+</head>
+<body>
+    <!-- <h1>self click selfy</h1> -->
+    <!-- <canvas id="canvas" style="width:100%; "></canvas> -->
+
+    <!-- <div class="video-player-container">
+        <video id="mideaPlayer" autoplay></video>
+    </div> -->
+
+    <!-- <div class="control-section">
+        <button class="image-btn" id="imageBtn">Take Image</button>
+        <button class="video-start-btn" id="startVideoBtn">Start Recording</button>
+        <button class="video-save-btn" id="videoSelectBtn">Save video</button>
+    </div> -->
+
+    <!-- <input type="file" id="inputFile" name="files" onchange="onFileInput(this)"> -->
+    <!-- <input type="text"> -->
+
+
+    <div class="d-flex main-container">
+        <div class="left-content">
+            <!-- <input class="form-control rounded-0 mb-4" id="password"  type="password" placeholder="File Password..."> -->
+            <button class="btn rounded-0 border-0" id="decrypt-btn" type="button">Decrypt File</button>
+            <button class="btn rounded-0 border-0" type="button" id="encrypt-btn">Encrypt File</button>
+
+            <div class="error-container"></div>
+        </div>
+
+        <div class="container-fluid ">
+            <div class="row height-full">
+                <div class="col-12 px-0">
+                    <div class="right-content px-4 pt-4">
+
+                      <textarea class="text-show-container" placeholder="Data Not Found..." name="" id="show-text" cols="30" rows="20"></textarea>
+                      <button disabled class="btn save-btn float-end rounded-0 text-uppercase" type="button" id="normal-save-btn">Save</button>
+                      <button class="btn open-file-btn float-end rounded-0 text-uppercase me-2" type="button" id="open-file-btn">Open File</button>
+                      <button class="btn clear-btn float-end rounded-0 text-uppercase me-2" type="button" id="clearTextContainerBtn">Clear</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+ <!-- successfully encrype file modal -->
+ <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade encript-confirmation-modal " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0">
+        <div class="modal-header rounded-0">
+          <h2 class="modal-title fs-6 text-center text-light text-uppercase" id="modal-header"></h2>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+           
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn ena-button rounded-0" onclick="closeConfirmationModal()" >Close</button> -->
+          <button type="button" class="btn ena-button rounded-0" id="closeModalBtn">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+   
+
+
+   
+
+    <!-- //module -->
+    <script type="module" src="./index.js"></script>
+
+
+    <script src="./render/screen.recorder.js"></script>
+
+   
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- <script type="module" src="./render/shared/confirmation.modal.js"></script>
+    <script src="./render/feature/decryption.js"></script> -->
+
+     
+
+
+    
+</body>
+</html>

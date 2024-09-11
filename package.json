@@ -1,0 +1,17 @@
+{
+  "name": "electron-demo-project",
+  "version": "1.0.0",
+  "description": "screen recoreder \u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5Dit is work as a scren recorder. let see how it work",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "shamim reza",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "electron": "^19.0.4",
+    "jquery": "^3.7.0"
+  }
+}
